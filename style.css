@@ -108,6 +108,238 @@ button:hover {
   color: var(--error);
 }
 
+.ticker-card {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.ticker-card:last-child {
+  border-bottom: none;
+}
+
+.signals {
+  font-family: 'Menlo', 'Courier New', monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin: 0.25rem 0 0.5rem;
+}
+
+.portfolio-summary {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  background: #fbf6ec;
+}
+
+.portfolio-summary h2 {
+  margin-top: 0;
+}
+
+.portfolio-summary ul {
+  margin: 0.5rem 0;
+  padding-left: 1.2rem;
+}
+
+.weight {
+  font-weight: bold;
+  color: var(--ink);
+}
+
+.price-target {
+  font-size: 0.9rem;
+  color: var(--ink);
+  background: #fbf6ec;
+  padding: 0.35rem 0.5rem;
+  border-radius: 3px;
+  margin: 0.4rem 0;
+}
+
+.excluded {
+  font-style: italic;
+  color: #8a8577;
+}
+
+.portfolio-stats {
+  font-family: 'Menlo', 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: var(--ink);
+  margin: 0.5rem 0;
+}
+
+.days-used {
+  color: #8a8577;
+  font-style: italic;
+}
+
+.rolling-title {
+  font-family: 'Menlo', 'Courier New', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin: 1rem 0 0.3rem;
+}
+
+.chart-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+
+.chart-block {
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 0.4rem;
+  background: white;
+}
+
+.news {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--line);
+}
+
+.panel-title {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+}
+
+#earnings-results h3 {
+  font-family: 'Menlo', 'Courier New', monospace;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin: 1rem 0 0.3rem;
+}
+
+#earnings-results ul {
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
+}
+
+.news h3 {
+  font-family: 'Menlo', 'Courier New', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin: 0 0 0.4rem;
+}
+
+.news ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.9rem;
+}
+
+.news li {
+  margin-bottom: 0.3rem;
+}
+
+.news a {
+  color: var(--ink);
+}
+
+.news-meta {
+  color: #8a8577;
+  font-size: 0.75rem;
+  margin-left: 0.3rem;
+}
+
+.watchlist-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.watchlist-row select,
+.watchlist-row input {
+  padding: 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-family: inherit;
+}
+
+.watchlist-row button {
+  padding: 0.4rem 0.7rem;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.watchlist-row button:hover {
+  background: var(--ink);
+}
+
+.signal-line {
+  margin: 0.3rem 0;
+}
+
+.signal-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-right: 0.4rem;
+  color: white;
+}
+
+.signal-buy {
+  background: #3a7d5c;
+}
+
+.signal-hold {
+  background: #9a6b2c;
+}
+
+.signal-sell {
+  background: #a6302c;
+}
+
+.weight-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.weight-row ul {
+  flex: 1;
+  min-width: 150px;
+  margin: 0.3rem 0;
+  padding-left: 1.2rem;
+}
+
+.pie-block {
+  width: 180px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .chart-row {
+    grid-template-columns: 1fr;
+  }
+
+  .weight-row {
+    flex-direction: column;
+  }
+
+  .pie-block {
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
 .app-footer {
   max-width: 640px;
   margin: 0 auto;
